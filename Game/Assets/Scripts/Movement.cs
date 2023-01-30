@@ -8,12 +8,14 @@ public class Movement : MonoBehaviour
     Rigidbody rb;
     public float thrustPower = 1000f;
     public float rot = 100f;
+    AudioSource audioSource;
     
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,14 @@ public class Movement : MonoBehaviour
         {
             Debug.Log("Pressed Space");
             rb.AddRelativeForce(Vector3.up * thrustPower * Time.deltaTime);
+            if (! audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 
