@@ -314,7 +314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 141823279714945993, guid: 257137b9bf3218247b2f742386f35e9b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 11.2404
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 141823279714945993, guid: 257137b9bf3218247b2f742386f35e9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 141823279714945997, guid: 257137b9bf3218247b2f742386f35e9b, type: 3}
       propertyPath: m_Name
-      value: Ground 1
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 257137b9bf3218247b2f742386f35e9b, type: 3}
@@ -375,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5181803662725503225, guid: fdc114c950d6a4a48a2d221a735f182b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 5181803662725503225, guid: fdc114c950d6a4a48a2d221a735f182b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -415,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5181803662725503229, guid: fdc114c950d6a4a48a2d221a735f182b, type: 3}
       propertyPath: m_Name
-      value: SpaceCraft 1 1
+      value: SpaceCraft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdc114c950d6a4a48a2d221a735f182b, type: 3}
@@ -432,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300581301579668357, guid: 57c6a211d0b621148bfd4f9d7c9cfd76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 8300581301579668357, guid: 57c6a211d0b621148bfd4f9d7c9cfd76, type: 3}
       propertyPath: m_LocalPosition.y
@@ -472,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300581301579668361, guid: 57c6a211d0b621148bfd4f9d7c9cfd76, type: 3}
       propertyPath: m_Name
-      value: Start 1
+      value: Start
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57c6a211d0b621148bfd4f9d7c9cfd76, type: 3}
@@ -489,7 +489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4726022926343841019, guid: 29b343f1a98b82e4ab09729233c19c7c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4726022926343841019, guid: 29b343f1a98b82e4ab09729233c19c7c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -529,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4726022926343841023, guid: 29b343f1a98b82e4ab09729233c19c7c, type: 3}
       propertyPath: m_Name
-      value: End 1
+      value: End
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29b343f1a98b82e4ab09729233c19c7c, type: 3}

@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public float thrustPower = 1000f;
     public float rot = 100f;
     AudioSource audioSource;
+    public AudioClip thrustNoise;
     
 
     // Start is called before the first frame update
@@ -34,7 +35,7 @@ public class Movement : MonoBehaviour
             rb.AddRelativeForce(Vector3.up * thrustPower * Time.deltaTime);
             if (! audioSource.isPlaying)
             {
-                audioSource.Play();
+                audioSource.PlayOneShot(thrustNoise);
             }
         }
         else
