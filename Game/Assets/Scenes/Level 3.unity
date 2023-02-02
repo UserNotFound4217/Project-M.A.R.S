@@ -586,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5181803662725503229, guid: fdc114c950d6a4a48a2d221a735f182b, type: 3}
       propertyPath: m_Name
-      value: SpaceCraft 1 1
+      value: SpaceCraft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdc114c950d6a4a48a2d221a735f182b, type: 3}
