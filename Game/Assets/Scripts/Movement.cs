@@ -10,6 +10,9 @@ public class Movement : MonoBehaviour
     public float rot = 100f;
     AudioSource audioSource;
     public AudioClip thrustNoise;
+    public ParticleSystem leftThrusterParticles;
+    public ParticleSystem rightThrusterParticles;
+    public ParticleSystem mainThrusterParticles;
     
 
     // Start is called before the first frame update
@@ -29,33 +32,62 @@ public class Movement : MonoBehaviour
 
     void Thrust()
     {
+        StartThrusting();
+    }
+
+    void StartThrusting()
+    {
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("Pressed Space");
             rb.AddRelativeForce(Vector3.up * thrustPower * Time.deltaTime);
-            if (! audioSource.isPlaying)
+            if (!audioSource.isPlaying)
             {
                 audioSource.PlayOneShot(thrustNoise);
             }
+            if (!mainThrusterParticles.isPlaying)
+            {
+                mainThrusterParticles.Play();
+            }
+
         }
         else
         {
             audioSource.Stop();
+            mainThrusterParticles.Stop();
         }
     }
 
     void Rotate()
     {
+        StartRotation();
+    }
+
+    void StartRotation()
+    {
         if (Input.GetKey(KeyCode.D))
         {
             Debug.Log("Pressed D");
             ApplyRotate(-rot);
+            if (!leftThrusterParticles.isPlaying)
+            {
+                leftThrusterParticles.Play();
+            }
         }
 
         else if (Input.GetKey(KeyCode.A))
         {
             Debug.Log("Pressed A");
             ApplyRotate(rot);
+            if (!rightThrusterParticles.isPlaying)
+            {
+                rightThrusterParticles.Play();
+            }
+        }
+        else
+        {
+            leftThrusterParticles.Stop();
+            rightThrusterParticles.Stop();
         }
     }
 
