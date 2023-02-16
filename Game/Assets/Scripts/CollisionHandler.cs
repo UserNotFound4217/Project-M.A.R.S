@@ -15,15 +15,41 @@ public class CollisionHandler : MonoBehaviour
    
 
    bool isTransitioning = false;
+   bool collisionOff = false;
 
    void Start() 
    {
     audioSource = GetComponent<AudioSource>();
    }
+
+   void Update() 
+   {
+     RespondToDebugKeys();
+   }
+
+
+    void RespondToDebugKeys()
+    {
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            collisionOff = !collisionOff;
+            Debug.Log("Pressed Colision Debug Key ( C )");
+        }
+        else if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            ReloadLevel();
+        }
+    }
+
+
     void OnCollisionEnter(Collision other) 
     {
 
-        if (isTransitioning)
+        if (isTransitioning || collisionOff)
         {
             return;
         }
