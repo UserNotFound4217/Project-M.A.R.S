@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - Friendly
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Invisible
   - Water
   - UI
   - 
